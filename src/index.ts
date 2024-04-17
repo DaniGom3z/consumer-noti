@@ -5,7 +5,7 @@ async function consumeMessages() {
       const connection = await connect("amqp://52.205.27.36/");
       const channel = await connection.createChannel();
   
-      const queue = "mqtt";
+      const queue = "mqtt2";
       const exchangeName = "amq.topic";
   
       await channel.assertQueue(queue, { durable: true });
