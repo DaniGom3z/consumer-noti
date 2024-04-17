@@ -83,7 +83,7 @@ async function consumeMessages() {
     };
 
     try {
-      await axios.post("http://localhost:6000/api/notification", dataToSend);
+      await axios.post("http://34.235.13.179:6000/api/notification", dataToSend);
     } catch (error) {
       console.error("Error al crear enclonsure:", error);
     }
